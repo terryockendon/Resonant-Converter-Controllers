@@ -1,0 +1,17 @@
+\appendix
+
+% Chapters after the \appendix command are lettered, not numbered.
+% Setting apart the appendices in the table of contents is awkward:
+
+\newpage
+\addcontentsline{toc}{part}{Appendices}
+\mbox{}
+\newpage
+
+% The \mbox{} command between two \newpage commands gives a blank page.
+% In the contents, the ``Appendices'' heading is shown as being on this
+% blank page, which is the page before the first appendix.  This stops the
+% first appendix from be listed ABOVE the word ``Appendices'' in the
+% table of contents.
+
+% \include appendix chapters here.
