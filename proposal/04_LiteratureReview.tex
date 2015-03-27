@@ -1,0 +1,36 @@
+% Present any results you already have obtained
+% and discuss how they fit in the framework of your thesis
+\chapter{Literature Review}
+Leading up to 1995, inverter technology began to change as there came a pushing demand for uninterpretable power supply (UPS) inverters that could deliver ``clean'' power. In general, inverters are relatively simple in their makeup, they take in a DC supply, pulse-width-modulate (PWM) the DC through an array of gates, and then filter the PWM signal to reconstruct a sinusoidal AC output. But, over the generations inverter models have turned to transformerless designs.\\ 
+Furthermore, inverter designs are increasingly used in residential, and business applications due to their reduced size, increased efficiency, and reduced total harmonic distortion (THD). Inverters increasingly utilise power and control electronics technology to include additional functions like control PV sources, measurements of DC and AC parameters, monitoring, protection, and communication \cite{474857,5730644}.\\
+Moreover, the following literature review investigates a variety of academic sources and provides a summary of background into DC/AC Inverters with respect to the interests of the Resonant Control Converters. Sections of the review cover information relevant to filters, phase locked loop structures, state space control and state measurement, resonant controllers, and modelling and simulation. For the remaining sections of the literature review inverters are considered as `transformerless,' and an AC/DC inverter is also referred to as a `Converter'.
+% refer to Gerard's book on hysteresis control.
+\section{Filters}
+Filters are commonly used in converters, they rejected unwanted harmonics which are predominately an $n^{th}$ order frequency multiple of the fundamental frequency. Harmonics are primary created from switching frequency PWM, parasitic inductance and capacitance, and utility side disturbances. The use of filters enable transformerless coupling between converters and the utility grid. This in turn allows the injection power from renewable energy sources such as photovoltaic solar panels. Most common of filter types implemented inside converters are the L, LC, and LCL topology. The following paragraphs provide an insight into each of these topologies, outlining there benefits and pitfalls.
+%
+\subsection{L Filter}
+\begin{figure}[htbp]
+\centerline{\input{proposal/circuits/Lfilter}}
+\caption{L filter.}
+\label{lfil}
+\end{figure}
+%
+\subsection{LC Filter}
+\begin{figure}[htbp]
+\centerline{\input{proposal/circuits/LCfilter}}
+\caption{LC filter.}
+\label{lcfil}
+\end{figure}
+%
+\subsection{LCL Filter}
+\begin{figure}[htbp]
+\centerline{\input{proposal/circuits/LCLfilter}}
+\caption{LCL filter.}
+\label{lclfil}
+\end{figure}
+%
+\section{Resonant Controllers}
+\section{Phase Locked Loop}
+\section{State Space Control and State Measurement}
+\section{Modelling and Simulation}.
+

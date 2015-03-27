@@ -1,0 +1,56 @@
+\renewcommand{\baselinestretch}{1.0}
+% How to insert a figure
+\begin{figure}[htbp]
+\centerline{
+\tikzset{
+    state/.style={
+           rectangle,
+           rounded corners,
+           draw=black, very thick,
+           anchor=south west,
+           align=center
+           },
+}
+    \begin{tikzpicture}
+        \draw[thick, >->]    (-5mm,0mm)      --      (130mm,0mm);
+        %
+        \draw[thick]    (0mm,2.5mm)      --      (0mm,-2.5mm);
+        \node[align=center, anchor=north] at (0mm,-5mm)
+        {Week 8\\
+        20/04/15};
+        %
+        \draw[thick]    (32.5mm,2.5mm)      --      (32.5mm,-2.5mm);
+        \node[align=center, anchor=north] at (32.5mm,-5mm)
+        {Week 9\\
+        27/04/15};
+        %
+        \draw[thick]    (65mm,2.5mm)      --      (65mm,-2.5mm);
+        \node[align=center, anchor=north] at (65mm,-5mm)
+        {Week 10\\
+        04/05/15};
+        %
+        \draw[thick]    (97.5mm,2.5mm)      --      (97.5mm,-2.5mm);
+        \node[align=center, anchor=north] at (97.5mm,-5mm)
+        {Week 11\\
+        11/05/15};
+        %
+        \node[state] at (-10mm,31mm) 
+        {\textbf{Add Realism Model}};
+        \draw[thick, ->]    (0mm,31mm)     --       (0mm,3.5mm);
+        %
+        \node[state] at (22.5mm,23.5mm) 
+        {\textbf{Model Optimisation II}};
+        \draw[thick, ->]    (32.5mm,23.5mm)     --       (32.5mm,3.5mm);
+        %
+        \node[state] at (55mm,16mm)
+        {\textbf{Verify Model Quality}};
+        \draw[thick, ->]    (65mm,16mm)     --       (65mm,3.5mm);
+        %
+        \node[state] at (87.5mm,8.5mm) 
+        {\textbf{Model Finalisation}};
+        \draw[thick, ->]    (97.5mm,8.5mm)     --       (97.5mm,3.5mm);    \end{tikzpicture}
+        }
+\caption{This phase aims to develop realism in model with further optimisation.}
+\label{time3}
+\end{figure}
+\renewcommand{\baselinestretch}{1.5}

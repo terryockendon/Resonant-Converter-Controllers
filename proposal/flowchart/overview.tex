@@ -1,0 +1,36 @@
+\renewcommand{\baselinestretch}{1.0}
+\begin{figure}[htbp]
+    \centerline{
+    \tikzset{
+        state/.style={
+               rectangle,
+               rounded corners,
+               draw=black, very thick,
+               anchor=center,
+               align=center
+               },
+    }
+    \begin{tikzpicture}
+    \draw[thick, ->]   (-5mm,105mm) -- (0mm,105mm) --  (0mm,100mm);
+    %
+    \node[state] at (0mm,90mm) 
+    {\textbf{Research \& Basic Modelling}};
+    \draw[thick, ->]    (0mm,80mm)     --       (0mm,75mm);
+    %
+    \node[state] at (0mm,65mm) 
+    {\textbf{Increase Model Complexity \& Model Optimisation}};
+    \draw[thick, ->]    (0mm,55mm)     --       (0mm,50mm);
+    %
+    \node[state] at (0mm,40mm) 
+    {\textbf{Add Realistic Factors \& Further Model Optimisation}};
+    \draw[thick, ->]    (0mm,30mm)     --       (0mm,25mm);
+    %
+    \node[state] at (0mm,15mm) 
+    {\textbf{Preparation for Physical Proof of Concept}};
+    \draw[thick, ->]    (0mm,5mm)      --      (0mm,0mm) -- (5mm,0mm);
+    \end{tikzpicture}
+    }
+    \caption{Overview of the four major development phases.}
+    \label{time0}
+\end{figure}
+\renewcommand{\baselinestretch}{1.5}

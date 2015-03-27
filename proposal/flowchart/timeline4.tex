@@ -1,0 +1,48 @@
+\renewcommand{\baselinestretch}{1.0}
+% How to insert a figure
+\begin{figure}[htbp]
+\centerline{
+\tikzset{
+    state/.style={
+           rectangle,
+           rounded corners,
+           draw=black, very thick,
+           anchor=south west,
+           align=center
+           },
+}
+    \begin{tikzpicture}
+        \draw[thick, >->]    (-5mm,0mm)      --      (97.5mm,0mm);
+        %
+        \draw[thick]    (0mm,2.5mm)      --      (0mm,-2.5mm);
+        \node[align=center, anchor=north] at (0mm,-5mm)
+        {Week 12\\
+        18/05/15};
+        %
+        \draw[thick]    (32.5mm,2.5mm)      --      (32.5mm,-2.5mm);
+        \node[align=center, anchor=north] at (32.5mm,-5mm)
+        {Week 13\\
+        25/05/15};
+        %
+        \draw[thick]    (65mm,2.5mm)      --      (65mm,-2.5mm);
+        \node[align=center, anchor=north] at (65mm,-5mm)
+        {Semester Two\\
+        20/07/15};
+        %
+        \node[state] at (-10mm,23.5mm) 
+        {\textbf{Physical Model Specification}};
+        \draw[thick, ->]    (0mm,23.5mm)     --       (0mm,3.5mm);
+        %
+        \node[state] at (22.5mm,16mm)
+        {\textbf{Physical Model Design}};
+        \draw[thick, ->]    (32.5mm,16mm)     --       (32.5mm,3.5mm);
+        %
+        \node[state] at (55mm,8.5mm) 
+        {\textbf{Physical Proof of Concept I}};
+        \draw[thick, ->]    (65mm,8.5mm)     --       (65mm,3.5mm);        %
+    \end{tikzpicture}
+}
+\caption{Physical model specification and realisation phase.}
+\label{time4}
+\end{figure}
+\renewcommand{\baselinestretch}{1.5}

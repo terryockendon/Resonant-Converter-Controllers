@@ -1,0 +1,10 @@
+\begin{circuitikz}
+    \draw(0,2) to[L, l=$L_1$, o-o] (2,2);
+    \draw(0,2) to[open, v_<=$v_{PWM}$] (0,0);
+    \draw(2,2) to[C, l=$C$] (2,0);
+    \draw(0,0) to[open, o-o] (2,0);
+    \draw(2,2) to[L, l=$L_2$, o-o] (4,2);
+    \draw(4,2) to[open, v^<=$v_{Grid}$, o-o] (4,0);
+    \draw(0,0) to[short, o-o] (2,0);
+    \draw(2,0) to[short, o-o] (4,0);
+\end{circuitikz}
